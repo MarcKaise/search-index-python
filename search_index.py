@@ -1,2 +1,5 @@
 def search_index(num: int, list: list) -> int:
-    return 0
+    for index, val in enumerate(list):
+        if num is val:
+            return index
+    return -1
